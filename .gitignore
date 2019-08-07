@@ -2,7 +2,6 @@
 #  Eclipse / IDEA settings  #
 #############################
 .settings/
-#bin/
 .project
 .idea
 
