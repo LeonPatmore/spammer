@@ -1,3 +1,5 @@
+# !/usr/bin/env python
+# coding=utf-8
 """
 Spammer
 Developer: Leon.Patmore
@@ -9,7 +11,10 @@ monkey.patch_all()
 import requests as requests
 from gevent._socketcommon import gethostbyname
 from requests import adapters
-from urllib.parse import urlparse
+try:
+    from urllib.parse import urlparse
+except ImportError:
+     from urlparse import urlparse
 
 
 class SpammerRequester(object):
