@@ -9,6 +9,7 @@ from gevent import monkey
 monkey.patch_all()
 
 import requests as requests
+
 from gevent._socketcommon import gethostbyname
 from requests import adapters
 try:

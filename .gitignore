@@ -1,10 +1,13 @@
 
-#  Eclipse / IDEA settings  #
-#############################
+# Eclipse / IDEA settings
 .settings/
 .project
 .idea
-
-#  Intellij / IDEA settings  #
-#############################
 *.iml
+
+# Logs and results
+**/*.log*
+**/result.json*
+
+# Compiled python
+**/*.pyc
