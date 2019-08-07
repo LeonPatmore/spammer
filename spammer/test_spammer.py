@@ -5,8 +5,8 @@ Spammer
 Developer: Leon.Patmore
 """
 
-from spam_run import SpamRun
-from spammer import Spammer, TaskResult, TaskState
+from .spam_run import SpamRun
+from .spammer import Spammer, TaskResult, TaskState
 
 class SimpleSpammer(Spammer):
 

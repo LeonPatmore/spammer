@@ -18,8 +18,8 @@ from sys import stdout
 from multiprocessing.pool import ThreadPool
 from gevent.pool import Pool
 
-from spammer import Spammer, TaskState
-from spammer import TaskResult
+from .spammer import Spammer, TaskState
+from .spammer import TaskResult
 
 _DEFAULT_BATCH_THREADPOOL_SIZE = 60
 _LOG_DIRECTORY = "logs"
