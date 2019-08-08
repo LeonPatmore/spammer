@@ -11,8 +11,13 @@ from .spammer import Spammer, TaskResult, TaskState
 class SimpleSpammer(Spammer):
 
     def task(self):
-        print("Task done...")
-        return TaskResult(TaskState.SUCCESS)
+        failed = True
+        if failed:
+            return TaskResult(TaskState.FAILURE,
+                              reason="Failed because it failed :D",
+                              response_time=100)
+        else:
+            return TaskResult(TaskState.SUCCESS)
 
 
 if __name__ == "__main__":
