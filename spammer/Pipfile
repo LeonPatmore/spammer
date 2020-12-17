@@ -1,6 +1,6 @@
 [packages]
 requests = "*"
-gevent = "*"
+gevent = "1.5.0"
 
 [requires]
 python_version = "3"
