@@ -19,7 +19,7 @@ setup(
 
     name='spammer',
 
-    version='0.1.3',
+    version='0.1.4',
 
     description='A package for helping with load testing.',
 
