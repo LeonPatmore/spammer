@@ -1,12 +1,9 @@
 # !/usr/bin/env python
 # coding=utf-8
-"""
-Spammer
-Developer: Leon.Patmore
-"""
 
-from .spam_run import SpamRun
-from .spammer import Spammer, TaskResult, TaskState
+from spammer.spam_run import SpamRun
+from spammer.spammer import Spammer, TaskResult, TaskState
+
 
 class SimpleSpammer(Spammer):
 

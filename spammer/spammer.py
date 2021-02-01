@@ -1,9 +1,5 @@
 # !/usr/bin/env python
 # coding=utf-8
-"""
-Spammer
-Developer: Leon.Patmore
-"""
 
 from gevent import monkey
 monkey.patch_all()
