@@ -1,11 +1,10 @@
 # !/usr/bin/env python
 # coding=utf-8
-"""
-Spammer
-Developer: Leon.Patmore
-"""
 
 from gevent import monkey, Greenlet
+
+from spammer.spammer import TaskState, Spammer
+
 monkey.patch_all()
 
 import logging
@@ -17,9 +16,6 @@ import json
 from sys import stdout
 from multiprocessing.pool import ThreadPool
 from gevent.pool import Pool
-
-from .spammer import Spammer, TaskState
-from .spammer import TaskResult
 
 _DEFAULT_BATCH_THREADPOOL_SIZE = 60
 _LOG_DIRECTORY = "logs"
